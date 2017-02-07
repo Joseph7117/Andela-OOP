@@ -1,12 +1,12 @@
-class BankAccount(object):
+class BankAccount(object):                                  #this is the base class which other classes will be derived
 
     def __init__(self, accName, accNumber, balance):
         self.accName = accName;
-        self.accNumber = accNumber;
+        self.accNumber = accNumber;                         #Ensure correct Object state through Encapuslation
         self.balance = balance;
 
     def getAccountName(self):
-        return self.accName;
+        return self.accName;                                #Object getters and setters for any required instance variable
 
     def getAccountNumber(self):
         return self.accNumber;
